@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/pet" path="/pet" id="6072522b-7f18-43a4-9854-30da63b32d8d">
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/pet" path="/pet" id="6072522b-7f18-43a4-9854-30da63b32d8d">
   <con:settings id="a6aec76e-d9d8-44fa-ab7b-dc1ab63a9c06">
     <con:setting id="6072522b-7f18-43a4-9854-30da63b32d8dfileName">%2Fpet</con:setting>
   </con:settings>
@@ -8,7 +8,7 @@
     <con:description>Add a new pet to the store</con:description>
     <con:settings/>
     <con:parameters/>
-    <con:representation type="RESPONSE">
+    <con:representation type="RESPONSE" id="">
       <con:mediaType>application/json</con:mediaType>
       <con:status>200</con:status>
       <con:params/>
@@ -28,7 +28,7 @@
   "status" : "available"
 }</con:sampleContent>
     </con:representation>
-    <con:representation type="RESPONSE">
+    <con:representation type="RESPONSE" id="">
       <con:mediaType>application/xml</con:mediaType>
       <con:status>200</con:status>
       <con:params/>
@@ -52,9 +52,11 @@
    <status>available</status>
 </pet>]]></con:sampleContent>
     </con:representation>
-    <con:representation type="REQUEST">
+    <con:representation type="REQUEST" id="">
       <con:mediaType>application/json</con:mediaType>
+      <con:status/>
       <con:params/>
+      <con:description xsi:nil="true"/>
       <con:sampleContent>{
   "id" : 10,
   "name" : "doggie",
@@ -70,9 +72,11 @@
   "status" : "available"
 }</con:sampleContent>
     </con:representation>
-    <con:representation type="REQUEST">
+    <con:representation type="REQUEST" id="">
       <con:mediaType>application/xml</con:mediaType>
+      <con:status/>
       <con:params/>
+      <con:description xsi:nil="true"/>
       <con:sampleContent><![CDATA[<pet>
    <id>10</id>
    <name>doggie</name>
@@ -92,11 +96,15 @@
    <status>available</status>
 </pet>]]></con:sampleContent>
     </con:representation>
-    <con:representation type="REQUEST">
+    <con:representation type="REQUEST" id="">
       <con:mediaType>application/x-www-form-urlencoded</con:mediaType>
+      <con:status/>
       <con:params/>
+      <con:description xsi:nil="true"/>
+      <con:sampleContent xsi:nil="true"/>
     </con:representation>
     <con:request name="Request 1" id="050b4049-433d-45a1-8bb0-c3f8c82042bc" mediaType="application/json" postQueryString="false">
+      <con:description>Add a new pet to the store</con:description>
       <con:settings/>
       <con:endpoint>https://petstore3.swagger.io/api/v3</con:endpoint>
       <con:request>{\r
@@ -121,6 +129,7 @@
       <con:parameters/>
     </con:request>
     <con:request name="Request 2" id="241acff2-1da5-4896-bdc1-206b063c88bf" mediaType="application/xml">
+      <con:description>Add a new pet to the store</con:description>
       <con:settings/>
       <con:endpoint>https://petstore3.swagger.io/api/v3</con:endpoint>
       <con:request><![CDATA[<pet>\r
@@ -148,8 +157,14 @@
       <con:parameters/>
     </con:request>
     <con:request name="Request 3" id="acf64f0d-1f9c-4529-9609-452952588c47" mediaType="application/x-www-form-urlencoded">
+      <con:description>Add a new pet to the store</con:description>
       <con:settings/>
       <con:endpoint>https://petstore3.swagger.io/api/v3</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>
@@ -157,7 +172,7 @@
     <con:description>Update an existing pet by Id</con:description>
     <con:settings/>
     <con:parameters/>
-    <con:representation type="RESPONSE">
+    <con:representation type="RESPONSE" id="">
       <con:mediaType>application/json</con:mediaType>
       <con:status>200</con:status>
       <con:params/>
@@ -177,7 +192,7 @@
   "status" : "available"
 }</con:sampleContent>
     </con:representation>
-    <con:representation type="RESPONSE">
+    <con:representation type="RESPONSE" id="">
       <con:mediaType>application/xml</con:mediaType>
       <con:status>200</con:status>
       <con:params/>
@@ -201,9 +216,11 @@
    <status>available</status>
 </pet>]]></con:sampleContent>
     </con:representation>
-    <con:representation type="REQUEST">
+    <con:representation type="REQUEST" id="">
       <con:mediaType>application/json</con:mediaType>
+      <con:status/>
       <con:params/>
+      <con:description xsi:nil="true"/>
       <con:sampleContent>{
   "id" : 10,
   "name" : "doggie",
@@ -219,9 +236,11 @@
   "status" : "available"
 }</con:sampleContent>
     </con:representation>
-    <con:representation type="REQUEST">
+    <con:representation type="REQUEST" id="">
       <con:mediaType>application/xml</con:mediaType>
+      <con:status/>
       <con:params/>
+      <con:description xsi:nil="true"/>
       <con:sampleContent><![CDATA[<pet>
    <id>10</id>
    <name>doggie</name>
@@ -241,11 +260,15 @@
    <status>available</status>
 </pet>]]></con:sampleContent>
     </con:representation>
-    <con:representation type="REQUEST">
+    <con:representation type="REQUEST" id="">
       <con:mediaType>application/x-www-form-urlencoded</con:mediaType>
+      <con:status/>
       <con:params/>
+      <con:description xsi:nil="true"/>
+      <con:sampleContent xsi:nil="true"/>
     </con:representation>
     <con:request name="Request 1" id="17ab0202-356c-4ca3-9878-5c2a8cf3c5b5" mediaType="application/json" postQueryString="false">
+      <con:description>Update an existing pet by Id</con:description>
       <con:settings/>
       <con:endpoint>https://petstore3.swagger.io/api/v3</con:endpoint>
       <con:request>{\r
@@ -270,6 +293,7 @@
       <con:parameters/>
     </con:request>
     <con:request name="Request 2" id="e192e010-89a5-46fa-8cd6-3c9f4fc2f4d3" mediaType="application/xml">
+      <con:description>Update an existing pet by Id</con:description>
       <con:settings/>
       <con:endpoint>https://petstore3.swagger.io/api/v3</con:endpoint>
       <con:request><![CDATA[<pet>\r
@@ -297,8 +321,14 @@
       <con:parameters/>
     </con:request>
     <con:request name="Request 3" id="d5a42e1f-0498-46d7-91ce-99cfed737c04" mediaType="application/x-www-form-urlencoded">
+      <con:description>Update an existing pet by Id</con:description>
       <con:settings/>
       <con:endpoint>https://petstore3.swagger.io/api/v3</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>
