@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:interface xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RestService" id="c8d49809-3e45-4269-b6a7-c1e79caf1795" name="Swagger Petstore - OpenAPI 3.0" type="rest_ex" wadlVersion="https://swagger.io/openapiv3/specification" definitionUrl="file:/C:/Users/ymane/Downloads/openapi.json">
-  <con:description id="a8ce0fa7-83b6-40fb-91d9-90c3f582acb9">This is a sample Pet Store Server based on the OpenAPI 3.0 specification.  You can find out more about
+  <con:description id="7b501a5d-d0fc-4094-a781-f41211eb8ac0">This is a sample Pet Store Server based on the OpenAPI 3.0 specification.  You can find out more about
 Swagger at [https://swagger.io](https://swagger.io). In the third iteration of the pet store, we've switched to the design first approach!
 You can now help us improve the API whether it's by making changes to the definition itself or to the code.
 That way, with time, we can improve the API in general, and expose some of the new features in OAS3.
