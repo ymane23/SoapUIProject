@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite xmlns:con="http://eviware.com/soapui/config" id="13c7e2fd-8a6a-40c8-936e-2030eeeea6fe" name="Pet Suite">
+  <con:settings id="981deab7-8519-4ecb-ad58-a7f387a795ed">
+    <con:setting id="13c7e2fd-8a6a-40c8-936e-2030eeeea6fefileName">Pet-Suite</con:setting>
+  </con:settings>
+  <con:runType>SEQUENTIAL</con:runType>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testSuite>

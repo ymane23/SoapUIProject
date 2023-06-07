@@ -61,6 +61,12 @@
     <con:request name="Request 1" id="6a19d26a-5f66-44e7-b24c-e149f0d32d54" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://petstore3.swagger.io/api/v3</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters/>
     </con:request>
   </con:method>
@@ -78,9 +84,15 @@
         <con:description>Pet id to delete</con:description>
       </con:parameter>
     </con:parameters>
-    <con:request name="Request 1" id="22c99b59-8443-4250-ae1a-e8213e2764a9" mediaType="application/json">
+    <con:request name="Request 1" id="22c99b59-8443-4250-ae1a-e8213e2764a9" mediaType="application/json" postQueryString="false">
       <con:settings/>
       <con:endpoint>https://petstore3.swagger.io/api/v3</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters/>
     </con:request>
   </con:method>

@@ -96,7 +96,7 @@
       <con:mediaType>application/x-www-form-urlencoded</con:mediaType>
       <con:params/>
     </con:representation>
-    <con:request name="Request 1" id="050b4049-433d-45a1-8bb0-c3f8c82042bc" mediaType="application/json">
+    <con:request name="Request 1" id="050b4049-433d-45a1-8bb0-c3f8c82042bc" mediaType="application/json" postQueryString="false">
       <con:settings/>
       <con:endpoint>https://petstore3.swagger.io/api/v3</con:endpoint>
       <con:request>{\r
@@ -117,6 +117,7 @@
         <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters/>
     </con:request>
     <con:request name="Request 2" id="241acff2-1da5-4896-bdc1-206b063c88bf" mediaType="application/xml">
@@ -244,7 +245,7 @@
       <con:mediaType>application/x-www-form-urlencoded</con:mediaType>
       <con:params/>
     </con:representation>
-    <con:request name="Request 1" id="17ab0202-356c-4ca3-9878-5c2a8cf3c5b5" mediaType="application/json">
+    <con:request name="Request 1" id="17ab0202-356c-4ca3-9878-5c2a8cf3c5b5" mediaType="application/json" postQueryString="false">
       <con:settings/>
       <con:endpoint>https://petstore3.swagger.io/api/v3</con:endpoint>
       <con:request>{\r
@@ -265,6 +266,7 @@
         <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters/>
     </con:request>
     <con:request name="Request 2" id="e192e010-89a5-46fa-8cd6-3c9f4fc2f4d3" mediaType="application/xml">
