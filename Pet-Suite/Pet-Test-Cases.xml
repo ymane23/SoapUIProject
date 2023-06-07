@@ -121,7 +121,7 @@
       </con:restRequest>
     </con:config>
   </con:testStep>
-  <con:testStep type="restrequest" name="Delete Pet" id="0aa17d1d-0912-470e-9365-e5a0294a9c8a">
+  <con:testStep type="restrequest" name="Delete Pet" id="7fd7a3b5-e007-493b-874a-2aa06936a287">
     <con:settings/>
     <con:config service="Swagger Petstore - OpenAPI 3.0" resourcePath="/pet/{petId}" methodName="deletePet" xsi:type="con:RestRequestStep">
       <con:restRequest name="Delete Pet" id="22c99b59-8443-4250-ae1a-e8213e2764a9" mediaType="application/json" postQueryString="false">
@@ -130,14 +130,14 @@
         </con:settings>
         <con:endpoint>https://petstore3.swagger.io/api/v3</con:endpoint>
         <con:request/>
-        <con:originalUri>https://petstore3.swagger.io/api/v3/pet/10</con:originalUri>
-        <con:assertion type="Valid HTTP Status Codes" id="82b08092-1b57-4ce8-928f-e75d52fa8e74" name="Valid HTTP Status Codes">
+        <con:originalUri>https://petstore3.swagger.io/api/v3/pet/</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="aca5f226-68fb-43df-b637-64abbad517ec" name="Valid HTTP Status Codes">
           <con:settings/>
           <con:configuration>
             <codes>200</codes>
           </con:configuration>
         </con:assertion>
-        <con:assertion type="Response SLA Assertion" id="7251dfc9-b7ca-414f-a1ed-a9ce1771141f" name="Response SLA">
+        <con:assertion type="Response SLA Assertion" id="90e03ef4-8669-4032-8cad-3fb961bbc26e" name="Response SLA">
           <con:configuration>
             <SLA>5000</SLA>
           </con:configuration>
