@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="/pet/{petId}" path="/pet/{petId}" id="1573b8c0-ea6a-4db3-ae4f-3d043945e632">
+  <con:settings id="904cdb5c-5671-4a2d-ba0a-ea283f94d6bd">
+    <con:setting id="1573b8c0-ea6a-4db3-ae4f-3d043945e632fileName">%2Fpet%2F%7BpetId%7D</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="getPetById" id="3ae151d8-9648-4d50-91ea-34544604f9fb" method="GET">
+    <con:description>Returns a single pet</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>petId</con:name>
+        <con:style>TEMPLATE</con:style>
+        <con:description>ID of pet to return</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>successful operation</con:description>
+      <con:sampleContent>{
+  "id" : 10,
+  "name" : "doggie",
+  "category" : {
+    "id" : 1,
+    "name" : "Dogs"
+  },
+  "photoUrls" : [ "string" ],
+  "tags" : [ {
+    "id" : 0,
+    "name" : "string"
+  } ],
+  "status" : "available"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>successful operation</con:description>
+      <con:sampleContent><![CDATA[<pet>
+   <id>10</id>
+   <name>doggie</name>
+   <category>
+      <id>1</id>
+      <name>Dogs</name>
+   </category>
+   <photoUrlss>
+      <photoUrl>string</photoUrl>
+   </photoUrlss>
+   <tagss>
+      <tag>
+         <id>0</id>
+         <name>string</name>
+      </tag>
+   </tagss>
+   <status>available</status>
+</pet>]]></con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="6a19d26a-5f66-44e7-b24c-e149f0d32d54" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://petstore3.swagger.io/api/v3</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="deletePet" id="73b7cb72-4509-4216-a902-ccafd8452c66" method="DELETE">
+    <con:description>delete a pet</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>api_key</con:name>
+        <con:style>HEADER</con:style>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>petId</con:name>
+        <con:style>TEMPLATE</con:style>
+        <con:description>Pet id to delete</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="Request 1" id="22c99b59-8443-4250-ae1a-e8213e2764a9" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://petstore3.swagger.io/api/v3</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>
