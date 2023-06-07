@@ -116,8 +116,11 @@
         </con:credentials>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters>
-          <con:entry key="petId" value="10"/>
+          <con:entry key="petId" value=""/>
         </con:parameters>
+        <con:parameterOrder>
+          <con:entry>petId</con:entry>
+        </con:parameterOrder>
       </con:restRequest>
     </con:config>
   </con:testStep>
@@ -148,8 +151,12 @@
         </con:credentials>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters>
-          <con:entry key="petId" value="10"/>
+          <con:entry key="petId" value=""/>
         </con:parameters>
+        <con:parameterOrder>
+          <con:entry>api_key</con:entry>
+          <con:entry>petId</con:entry>
+        </con:parameterOrder>
       </con:restRequest>
     </con:config>
   </con:testStep>

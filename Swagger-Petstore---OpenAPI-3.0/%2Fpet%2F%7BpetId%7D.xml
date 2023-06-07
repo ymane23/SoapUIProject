@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/pet/{petId}" path="/pet/{petId}" id="1573b8c0-ea6a-4db3-ae4f-3d043945e632">
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/pet/{petId}" path="/pet/{petId}" id="1573b8c0-ea6a-4db3-ae4f-3d043945e632">
   <con:settings id="904cdb5c-5671-4a2d-ba0a-ea283f94d6bd">
     <con:setting id="1573b8c0-ea6a-4db3-ae4f-3d043945e632fileName">%2Fpet%2F%7BpetId%7D</con:setting>
   </con:settings>
@@ -10,7 +10,9 @@
     <con:parameters>
       <con:parameter required="true">
         <con:name>petId</con:name>
+        <con:value/>
         <con:style>TEMPLATE</con:style>
+        <con:default/>
         <con:description>ID of pet to return</con:description>
       </con:parameter>
     </con:parameters>
@@ -59,6 +61,7 @@
 </pet>]]></con:sampleContent>
     </con:representation>
     <con:request name="Request 1" id="6a19d26a-5f66-44e7-b24c-e149f0d32d54" mediaType="application/json">
+      <con:description xsi:nil="true"/>
       <con:settings>
         <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
       </con:settings>
@@ -69,7 +72,12 @@
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
-      <con:parameters/>
+      <con:parameters>
+        <con:entry key="petId" value=""/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>petId</con:entry>
+      </con:parameterOrder>
     </con:request>
   </con:method>
   <con:method name="deletePet" id="73b7cb72-4509-4216-a902-ccafd8452c66" method="DELETE">
@@ -82,11 +90,14 @@
       </con:parameter>
       <con:parameter required="true">
         <con:name>petId</con:name>
+        <con:value/>
         <con:style>TEMPLATE</con:style>
+        <con:default/>
         <con:description>Pet id to delete</con:description>
       </con:parameter>
     </con:parameters>
     <con:request name="Request 1" id="22c99b59-8443-4250-ae1a-e8213e2764a9" mediaType="application/json" postQueryString="false">
+      <con:description xsi:nil="true"/>
       <con:settings>
         <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
       </con:settings>
@@ -97,7 +108,13 @@
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
-      <con:parameters/>
+      <con:parameters>
+        <con:entry key="petId" value=""/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>api_key</con:entry>
+        <con:entry>petId</con:entry>
+      </con:parameterOrder>
     </con:request>
   </con:method>
 </con:resource>
