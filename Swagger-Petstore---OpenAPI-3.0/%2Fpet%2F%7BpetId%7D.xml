@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/pet/{petId}" path="/pet/{petId}" id="ab2fbf62-72a7-45e5-8536-884033d3c07a">
+  <con:settings id="079ac678-db51-4d21-bd2a-f7c3ed4f5018">
+    <con:setting id="ab2fbf62-72a7-45e5-8536-884033d3c07afileName">%2Fpet%2F%7BpetId%7D</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="getPetById" id="8d895f58-41f1-48b5-a3ef-670202e29eea" method="GET">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>petId</con:name>
+        <con:value/>
+        <con:style>TEMPLATE</con:style>
+        <con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:string</con:type>
+        <con:description>ID of pet to return</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE" id="">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>successful operation</con:description>
+      <con:sampleContent>{
+  "id" : 10,
+  "name" : "doggie",
+  "category" : {
+    "id" : 1,
+    "name" : "Dogs"
+  },
+  "photoUrls" : [ "string" ],
+  "tags" : [ {
+    "id" : 0,
+    "name" : "string"
+  } ],
+  "status" : "available"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE" id="">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:description>successful operation</con:description>
+      <con:sampleContent><![CDATA[<pet>
+   <id>10</id>
+   <name>doggie</name>
+   <category>
+      <id>1</id>
+      <name>Dogs</name>
+   </category>
+   <photoUrlss>
+      <photoUrl>string</photoUrl>
+   </photoUrlss>
+   <tagss>
+      <tag>
+         <id>0</id>
+         <name>string</name>
+      </tag>
+   </tagss>
+   <status>available</status>
+</pet>]]></con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="b011c3f8-9732-44c9-8ad9-837edbb7c27c" mediaType="application/json">
+      <con:description xsi:nil="true"/>
+      <con:settings/>
+      <con:endpoint>https://petstore3.swagger.io/api/v3</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="petId" value="10"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>petId</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+  <con:method name="deletePet" id="5d14c5a5-ad7d-4be8-87fc-512ae69a2060" method="DELETE">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="false">
+        <con:name>api_key</con:name>
+        <con:value/>
+        <con:style>HEADER</con:style>
+        <con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:string</con:type>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>petId</con:name>
+        <con:value/>
+        <con:style>TEMPLATE</con:style>
+        <con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:string</con:type>
+        <con:description>Pet id to delete</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:request name="Request 1" id="ccfef4e9-56f1-4d10-af2a-878ae2dacb8c" mediaType="application/json" postQueryString="false">
+      <con:description xsi:nil="true"/>
+      <con:settings/>
+      <con:endpoint>https://petstore3.swagger.io/api/v3</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:parameterOrder>
+        <con:entry>api_key</con:entry>
+        <con:entry>petId</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>
