@@ -91,7 +91,7 @@
   </con:testStep>
   <con:testStep type="restrequest" name="Get Pet" id="757b5553-cdd0-4e91-83df-27ac8754ed15">
     <con:settings/>
-    <con:config service="Swagger Petstore - OpenAPI 3.0" resourcePath="/pet/{petId}" methodName="getPetById" xsi:type="con:RestRequestStep">
+    <con:config service="Swagger Petstore - OpenAPI 3.0" resourcePath="/pet/{petId_name}" methodName="getPetById" xsi:type="con:RestRequestStep">
       <con:restRequest name="Get Pet" id="b011c3f8-9732-44c9-8ad9-837edbb7c27c" mediaType="application/json">
         <con:description xsi:nil="true"/>
         <con:settings/>
@@ -115,17 +115,17 @@
         </con:credentials>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters>
-          <con:entry key="petId" value="10"/>
+          <con:entry key="petId_name" value=""/>
         </con:parameters>
         <con:parameterOrder>
-          <con:entry>petId</con:entry>
+          <con:entry>petId_name</con:entry>
         </con:parameterOrder>
       </con:restRequest>
     </con:config>
   </con:testStep>
   <con:testStep type="restrequest" name="Delete Pet" id="5403f998-ed58-44e6-8ad1-88296569088c">
     <con:settings/>
-    <con:config service="Swagger Petstore - OpenAPI 3.0" resourcePath="/pet/{petId}" methodName="deletePet" xsi:type="con:RestRequestStep">
+    <con:config service="Swagger Petstore - OpenAPI 3.0" resourcePath="/pet/{petId_name}" methodName="deletePet" xsi:type="con:RestRequestStep">
       <con:restRequest name="Delete Pet" id="ccfef4e9-56f1-4d10-af2a-878ae2dacb8c" mediaType="application/json" postQueryString="false">
         <con:description xsi:nil="true"/>
         <con:settings>
@@ -151,11 +151,11 @@
         </con:credentials>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters>
-          <con:entry key="petId" value="10"/>
+          <con:entry key="petId_name" value=""/>
         </con:parameters>
         <con:parameterOrder>
           <con:entry>api_key</con:entry>
-          <con:entry>petId</con:entry>
+          <con:entry>petId_name</con:entry>
         </con:parameterOrder>
       </con:restRequest>
     </con:config>
