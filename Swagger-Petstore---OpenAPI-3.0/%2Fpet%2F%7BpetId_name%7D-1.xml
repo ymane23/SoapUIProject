@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/pet/{petId}" path="/pet/{petId}" id="ab2fbf62-72a7-45e5-8536-884033d3c07a">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/pet/{petId_name}" path="/pet/{petId_name}" id="ab2fbf62-72a7-45e5-8536-884033d3c07a">
   <con:settings id="079ac678-db51-4d21-bd2a-f7c3ed4f5018">
-    <con:setting id="ab2fbf62-72a7-45e5-8536-884033d3c07afileName">%2Fpet%2F%7BpetId%7D</con:setting>
+    <con:setting id="ab2fbf62-72a7-45e5-8536-884033d3c07afileName">%2Fpet%2F%7BpetId_name%7D-1</con:setting>
   </con:settings>
   <con:parameters/>
   <con:method name="getPetById" id="8d895f58-41f1-48b5-a3ef-670202e29eea" method="GET">
     <con:settings/>
     <con:parameters>
       <con:parameter required="true">
-        <con:name>petId</con:name>
+        <con:name>petId_name</con:name>
         <con:value/>
         <con:style>TEMPLATE</con:style>
-        <con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:string</con:type>
+        <con:default/>
         <con:description>ID of pet to return</con:description>
       </con:parameter>
     </con:parameters>
-    <con:representation type="RESPONSE" id="">
+    <con:representation type="RESPONSE">
       <con:mediaType>application/json</con:mediaType>
       <con:status>200</con:status>
       <con:params/>
@@ -35,7 +35,7 @@
   "status" : "available"
 }</con:sampleContent>
     </con:representation>
-    <con:representation type="RESPONSE" id="">
+    <con:representation type="RESPONSE">
       <con:mediaType>application/xml</con:mediaType>
       <con:status>200</con:status>
       <con:params/>
@@ -70,10 +70,10 @@
       </con:credentials>
       <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters>
-        <con:entry key="petId" value="10"/>
+        <con:entry key="petId_name" value=""/>
       </con:parameters>
       <con:parameterOrder>
-        <con:entry>petId</con:entry>
+        <con:entry>petId_name</con:entry>
       </con:parameterOrder>
     </con:request>
   </con:method>
@@ -88,10 +88,10 @@
         <con:description xsi:nil="true"/>
       </con:parameter>
       <con:parameter required="true">
-        <con:name>petId</con:name>
+        <con:name>petId_name</con:name>
         <con:value/>
         <con:style>TEMPLATE</con:style>
-        <con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:string</con:type>
+        <con:default/>
         <con:description>Pet id to delete</con:description>
       </con:parameter>
     </con:parameters>
@@ -105,10 +105,12 @@
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
-      <con:parameters/>
+      <con:parameters>
+        <con:entry key="petId_name" value=""/>
+      </con:parameters>
       <con:parameterOrder>
         <con:entry>api_key</con:entry>
-        <con:entry>petId</con:entry>
+        <con:entry>petId_name</con:entry>
       </con:parameterOrder>
     </con:request>
   </con:method>
