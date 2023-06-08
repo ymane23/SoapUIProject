@@ -91,7 +91,7 @@
   </con:testStep>
   <con:testStep type="restrequest" name="Get Pet" id="1d72b519-d546-4b8a-a618-764efe742b6d">
     <con:settings/>
-    <con:config service="Swagger Petstore - OpenAPI 3.0" resourcePath="/pet/{petId}" methodName="getPetById" xsi:type="con:RestRequestStep">
+    <con:config service="Swagger Petstore - OpenAPI 3.0" resourcePath="/pet/{petId_name}" methodName="getPetById" xsi:type="con:RestRequestStep">
       <con:restRequest name="Get Pet" id="6a19d26a-5f66-44e7-b24c-e149f0d32d54" mediaType="application/json">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
@@ -116,17 +116,17 @@
         </con:credentials>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters>
-          <con:entry key="petId" value=""/>
+          <con:entry key="petId_name" value=""/>
         </con:parameters>
         <con:parameterOrder>
-          <con:entry>petId</con:entry>
+          <con:entry>petId_name</con:entry>
         </con:parameterOrder>
       </con:restRequest>
     </con:config>
   </con:testStep>
   <con:testStep type="restrequest" name="Delete Pet" id="7fd7a3b5-e007-493b-874a-2aa06936a287">
     <con:settings/>
-    <con:config service="Swagger Petstore - OpenAPI 3.0" resourcePath="/pet/{petId}" methodName="deletePet" xsi:type="con:RestRequestStep">
+    <con:config service="Swagger Petstore - OpenAPI 3.0" resourcePath="/pet/{petId_name}" methodName="deletePet" xsi:type="con:RestRequestStep">
       <con:restRequest name="Delete Pet" id="22c99b59-8443-4250-ae1a-e8213e2764a9" mediaType="application/json" postQueryString="false">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
@@ -151,11 +151,11 @@
         </con:credentials>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters>
-          <con:entry key="petId" value=""/>
+          <con:entry key="petId_name" value=""/>
         </con:parameters>
         <con:parameterOrder>
           <con:entry>api_key</con:entry>
-          <con:entry>petId</con:entry>
+          <con:entry>petId_name</con:entry>
         </con:parameterOrder>
       </con:restRequest>
     </con:config>

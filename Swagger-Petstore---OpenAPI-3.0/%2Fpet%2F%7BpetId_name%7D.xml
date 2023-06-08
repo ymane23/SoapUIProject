@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/pet/{petId}" path="/pet/{petId}" id="1573b8c0-ea6a-4db3-ae4f-3d043945e632">
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/pet/{petId_name}" path="/pet/{petId_name}" id="1573b8c0-ea6a-4db3-ae4f-3d043945e632">
   <con:settings id="904cdb5c-5671-4a2d-ba0a-ea283f94d6bd">
-    <con:setting id="1573b8c0-ea6a-4db3-ae4f-3d043945e632fileName">%2Fpet%2F%7BpetId%7D</con:setting>
+    <con:setting id="1573b8c0-ea6a-4db3-ae4f-3d043945e632fileName">%2Fpet%2F%7BpetId_name%7D</con:setting>
   </con:settings>
   <con:parameters/>
   <con:method name="getPetById" id="3ae151d8-9648-4d50-91ea-34544604f9fb" method="GET">
@@ -9,7 +9,7 @@
     <con:settings/>
     <con:parameters>
       <con:parameter required="true">
-        <con:name>petId</con:name>
+        <con:name>petId_name</con:name>
         <con:value/>
         <con:style>TEMPLATE</con:style>
         <con:default/>
@@ -73,10 +73,10 @@
       </con:credentials>
       <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters>
-        <con:entry key="petId" value=""/>
+        <con:entry key="petId_name" value=""/>
       </con:parameters>
       <con:parameterOrder>
-        <con:entry>petId</con:entry>
+        <con:entry>petId_name</con:entry>
       </con:parameterOrder>
     </con:request>
   </con:method>
@@ -89,7 +89,7 @@
         <con:style>HEADER</con:style>
       </con:parameter>
       <con:parameter required="true">
-        <con:name>petId</con:name>
+        <con:name>petId_name</con:name>
         <con:value/>
         <con:style>TEMPLATE</con:style>
         <con:default/>
@@ -109,11 +109,11 @@
       </con:credentials>
       <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters>
-        <con:entry key="petId" value=""/>
+        <con:entry key="petId_name" value=""/>
       </con:parameters>
       <con:parameterOrder>
         <con:entry>api_key</con:entry>
-        <con:entry>petId</con:entry>
+        <con:entry>petId_name</con:entry>
       </con:parameterOrder>
     </con:request>
   </con:method>
