@@ -151,7 +151,7 @@
         </con:credentials>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters>
-          <con:entry key="petId" value=""/>
+          <con:entry key="petId" value="10"/>
         </con:parameters>
         <con:parameterOrder>
           <con:entry>api_key</con:entry>
